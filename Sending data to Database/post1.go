@@ -32,6 +32,7 @@ func main(){
 			Name : r.FormValue("name"),
 			Password : r.FormValue("pwd1"),
 		}
+		
 		_ = u
 			tpl.Execute(w,struct{success bool} {true})
 			senddata(u.Id,u.Email,u.Name,u.Password)
