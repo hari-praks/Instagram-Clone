@@ -1,0 +1,48 @@
+{{if.Success}}
+	<h1>Your post has been posted</h1>
+{{else}}
+	<h1> Post Info</h1>
+	<form method="Post" action="/posts">
+           
+               <input type="text" id="input-field" name="postid" placeholder="Enter Id" required><br>
+            
+             
+               <textarea  name="caption" id="input-field" placeholder="Enter Caption" required></textarea><br>
+           
+            
+               <input type="URL" id="input-field" name="Img"  placeholder="Enter Image URL Here" required><br>
+
+               <input type="time" id="input-field" name="posttime" required><br>
+     
+
+               <input type="submit" id="submit-btn" value="Post it"></input>
+            
+
+	</form>
+{{end}}
+<style type="text/css">
+#input-field
+{
+width: 50%;
+padding: 10px 0;
+margin: 5px 0;
+border-left: 0;
+border-top: 0;
+border-right:0;
+border-bottom: 1px solid  #999;
+outline:none;
+background:transparent;
+}
+#submit-btn{
+width:25%;
+padding:10px 30px;
+cursor:pointer;
+display:block;
+
+background:linear-gradient(to right,#ff105f,#ffad06);
+border:0;
+outline:none;
+border-radius:30px;
+float: left;
+}
+</style>
