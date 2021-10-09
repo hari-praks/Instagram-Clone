@@ -40,11 +40,7 @@ func retreivefromDB(copyId string){
           fmt.Println("Connected to MongoDB")
           
           quickstartdb := client.Database("godb")
-          usersCollection :=quickstartdb.Collection("postfromusers")
-
-      
-         
-        
+          usersCollection :=quickstartdb.Collection("postfromusers")        
           filterCursor,err := usersCollection.Find(ctx,bson.M{"Id":copyId})
           if err!=nil{
                log.Fatal(err)
