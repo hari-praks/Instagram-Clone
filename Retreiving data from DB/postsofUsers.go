@@ -41,9 +41,7 @@ func retreivefromDB(copyId string){
           
           quickstartdb := client.Database("godb")
           usersCollection :=quickstartdb.Collection("html")
-
-      
-         
+     
         
           filterCursor,err := usersCollection.Find(ctx,bson.M{"Id":copyId})
           if err!=nil{
