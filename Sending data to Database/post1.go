@@ -62,8 +62,6 @@ func senddata(formid,f_Email,f_name,f_password string){
 
 		fmt.Println("Inserted a single document: ", insertResult.InsertedID)
 		log.Println("error: ",err)
-
-
 	
 
 }
