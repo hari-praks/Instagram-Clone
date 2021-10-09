@@ -1,0 +1,51 @@
+{{if.Success}}
+	<h1> Thank you User</h1>
+{{else}}
+	<h1> User Info</h1>
+	<form method="Post" action="/users">
+           
+               <input type="text" id="input-field" name="Signupid" placeholder="User Id" required>
+            
+             
+               <input type="text" id="input-field" name="name" placeholder="Enter Name" required><br>
+           
+            
+               <input type="email" id="input-field" name="emailid"  placeholder="Email Id" required>
+            
+            
+                <input type="password" id="input-field" name="pwd1" placeholder="Enter password" pattern="[A-Za-z0-9._%+-' ']{6,}" title="password must be atleast six characters" required>
+            <br><br><br>
+          
+         
+            
+               <input type="submit" id="submit-btn" value="Register"></input>
+            
+
+	</form>
+{{end}}
+<style type="text/css">
+#input-field
+{
+width: 50%;
+padding: 10px 0;
+margin: 5px 0;
+border-left: 0;
+border-top: 0;
+border-right:0;
+border-bottom: 1px solid  #999;
+outline:none;
+background:transparent;
+}
+#submit-btn{
+width:25%;
+padding:10px 30px;
+cursor:pointer;
+display:block;
+
+background:linear-gradient(to right,#ff105f,#ffad06);
+border:0;
+outline:none;
+border-radius:30px;
+float: left;
+}
+</style>
